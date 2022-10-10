@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <header>
+		<div class="container">
+			<h3>Bookmarker</h3>
+		</div>
+	</header>
+	<div class="container">
+		<div class="well">
+			<div class="column">
+				<h2>Bookmark your favorite sites </h2>
+				<p>Site Name</p>
+				<input id="siteName" onkeyup="validateProductName()"  placeholder="Bookmark Name" type="text" />
+				<p>Site URL</p>
+				<input id="siteUrl" placeholder="website URL" type="text" />
+				<div class="m-auto">
+						<button class="btn btn-primary"  id="addtext" onclick="addText()">Submit</button>
+						<p class="text-danger d-none" id="name-validation">please check your input (suppose to start with capital )</p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div id="bookmarkList" class="column">
+			
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<p>&copy; 2019 Bookmarker Inc.</p>
+		</div>
+	</footer>
+    <script src="index.js"></script>
+</body>
+</html>
